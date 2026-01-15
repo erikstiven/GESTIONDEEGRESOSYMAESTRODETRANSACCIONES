@@ -70,7 +70,8 @@
 
 		function recarga(){
   
-			//recarga_lista();	
+			var table = $('#example').DataTable();
+			table.ajax.reload(null, false);
      	
 		}
         function buscar_cuentas(id){
