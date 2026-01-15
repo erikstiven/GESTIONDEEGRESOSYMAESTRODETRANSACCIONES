@@ -56,8 +56,8 @@
 			document.getElementById("cuenta").value = tran_cod_cuen;
 			document.getElementById("tipoComprobante").value = trans_tip_comp;
 			document.getElementById("codTipoRet").value = tran_cod_tret;
-			document.getElementById("anticipo").checked = tran_ant_tran;
-			document.getElementById("remesas_sn").checked = tran_rem_tran;
+			document.getElementById("anticipo").checked = (tran_ant_tran === '1' || tran_ant_tran === 1 || tran_ant_tran === 'S');
+			document.getElementById("remesas_sn").checked = (tran_rem_tran === '1' || tran_rem_tran === 1 || tran_rem_tran === 'S');
             if(tran_prot_tram=='S'){
                 document.getElementById("protestado_sn").checked = tran_prot_tram;
             }
